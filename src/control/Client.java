@@ -1,4 +1,5 @@
 package control;
+import modelo.*;
 
 public class Client {
 
@@ -14,7 +15,7 @@ public static void main(String[] args) {
 		// Debe descomentar este bloque cuando implemente las clases
 		// -------------------------------------------------
 	
-//		Account acObj = new Account(4); 
+		Account acObj = new Account(4); 
 //		
 //	
 //		System.out.println(acObj.getBalance());
@@ -34,31 +35,32 @@ public static void main(String[] args) {
 		// -------------------------------------------------
 		
 		
-//		Bank bank = new Bank(); 		
+		Bank bank = new Bank(); 		
 //		
-//		bank.openAccount('A', 3354678);
-//		bank.openAccount('A', 3359302);
-//		bank.openAccount('C', 3379844);
+		bank.openAccount('A', 3354678);
+		bank.openAccount('A', 3359302);
+		bank.openAccount('C', 3379844);
 //		
-//		bank.payDividend(3354678, 10);
-//		bank.payDividend(3354678, 30);
+		bank.payDividend(3354678, 10);
+		bank.payDividend(3354678, 30);
+		
+		bank.payDividend(3359302, 50);
+		bank.payDividend(3359302, 50);
 //		
-//		bank.payDividend(3359302, 50);
-//		bank.payDividend(3359302, 50);
+		bank.payDividend(3379844, 10);
+		bank.payDividend(3379844, 10);
 //		
-//		bank.payDividend(3379844, 10);
-//		bank.payDividend(3379844, 10);
+		System.out.println("*** Val = "+bank.getBalanceAccount(3379844));
 //		
-//		System.out.println("*** Val = "+bank.getBalance(3379844));
+		bank.withdrawAccount(3379844, 20);
+		
+		bank.withdrawAccount(3379844, 5);
 //		
-//		bank.withdrawAccount(3379844, 20);
-//		bank.withdrawAccount(3379844, 5);
+		System.out.println("*** Val = "+bank.getBalanceAccount(3379844));
 //		
-//		System.out.println("*** Val = "+bank.getBalance(3379844));
+		bank.withdrawAccount(3379844, 15);
 //		
-//		bank.withdrawAccount(3379844, 15);
-//		
-//		System.out.println("*** Val = "+bank.getBalance(3379844));
+		System.out.println("*** Val = "+bank.getBalanceAccount(3379844));
 //		
 //		bank.sendLetterToOverdraftAccounts();
 		
