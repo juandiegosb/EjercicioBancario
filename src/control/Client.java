@@ -1,6 +1,4 @@
-package ufps.poo2.ejercicio.test;
-
-import ufps.poo2.ejercicio.banco.Bank;
+package control;
 
 public class Client {
 
