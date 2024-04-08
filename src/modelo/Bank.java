@@ -57,5 +57,14 @@ public class Bank {
 		
 	}
 	
+	public void sendLetterToOverdraftAccounts() {
+		for (Account i : cuentas) {
+			if(i instanceof CurrentAccount) {
+				if(((CurrentAccount)i).isOverdraft()) i.print();
+			}
+		}
+
+	}
+	
 	
 }
