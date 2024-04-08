@@ -62,7 +62,7 @@ public static void main(String[] args) {
 //		
 		System.out.println("*** Val = "+bank.getBalanceAccount(3379844));
 //		
-//		bank.sendLetterToOverdraftAccounts();
+		bank.sendLetterToOverdraftAccounts();
 		
 	
 		// ==================================================
