@@ -66,5 +66,13 @@ public class Bank {
 
 	}
 	
-	
+	public void closeAccount (int numeroCuenta) {
+		for (Account i : cuentas) {
+			if(i.getAccountNumber()==numeroCuenta) {
+				cuentas.remove(i);
+				return;
+			}
+		}
+		System.out.println("Cuenta " + numeroCuenta + " no existe");
+	}
 }
